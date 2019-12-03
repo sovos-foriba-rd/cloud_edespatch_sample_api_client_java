@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sh:StandardBusinessDocument
+	xsi:schemaLocation="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader PackageProxy_1_2.xsd"
+	xmlns:sh="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader"
+	xmlns:ef="http://www.efatura.gov.tr/package-namespace"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sh:StandardBusinessDocumentHeader>
+		<sh:HeaderVersion>1.2</sh:HeaderVersion>
+		<sh:Sender>
+			<sh:Identifier>urn:mail:testgb@test.com</sh:Identifier><!--DOLDURULMALIDIR -->
+			<sh:ContactInformation>
+				<sh:Contact>FIT SOLUTIONS</sh:Contact>
+				<sh:ContactTypeIdentifier>UNVAN</sh:ContactTypeIdentifier>
+			</sh:ContactInformation>
+			<sh:ContactInformation>
+				<sh:Contact>0123456789</sh:Contact><!--DOLDURULMALIDIR -->
+				<sh:ContactTypeIdentifier>VKN_TCKN</sh:ContactTypeIdentifier>
+				<!--VKN/TCKN -->
+			</sh:ContactInformation>
+		</sh:Sender>
+		<sh:Receiver>
+			<sh:Identifier>urn:mail:testpk@test.com</sh:Identifier><!--DOLDURULMALIDIR -->
+			<sh:ContactInformation>
+				<sh:Contact>FIT SOLUTIONS</sh:Contact>
+				<sh:ContactTypeIdentifier>UNVAN</sh:ContactTypeIdentifier>
+			</sh:ContactInformation>
+			<sh:ContactInformation>
+				<sh:Contact>0123456789</sh:Contact><!--DOLDURULMALIDIR -->
+				<sh:ContactTypeIdentifier>VKN_TCKN</sh:ContactTypeIdentifier>
+				<!--VKN/TCKN -->
+			</sh:ContactInformation>
+		</sh:Receiver>
+		<sh:DocumentIdentification>
+			<sh:Standard>UBLTR</sh:Standard>
+			<sh:TypeVersion>1.2</sh:TypeVersion>
+			<sh:InstanceIdentifier>72277AEB-8A95-4740-9200-CAB611002F11</sh:InstanceIdentifier>
+			<sh:Type>SENDERENVELOPE</sh:Type>
+			<sh:CreationDateAndTime>2017-09-25T14:48:14</sh:CreationDateAndTime>
+		</sh:DocumentIdentification>
+		<sh:Manifest>
+			<sh:NumberOfItems>1</sh:NumberOfItems>
+			<sh:ManifestItem>
+				<sh:MimeTypeQualifierCode>application/xml</sh:MimeTypeQualifierCode>
+				<sh:UniformResourceIdentifier />
+				<sh:Description></sh:Description>
+				<sh:LanguageCode>TR</sh:LanguageCode>
+			</sh:ManifestItem>
+		</sh:Manifest>
+	</sh:StandardBusinessDocumentHeader>
+	<ef:Package>
+		<Elements>
+			<ElementType>DESPATCHADVICE</ElementType>
+			<ElementCount>1</ElementCount>
+			<ElementList>
+
+				<DespatchAdvice
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+					xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+					xmlns:n4="http://www.altova.com/samplexml/other-namespace"
+					xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+					xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2 ..\xsdrt\maindoc\UBL-DespatchAdvice-2.1.xsd">
+
+					<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+					<cbc:CustomizationID>TR1.2.1</cbc:CustomizationID>
+					<cbc:ProfileID>TEMELIRSALIYE</cbc:ProfileID>
+
+					<cbc:CopyIndicator>false</cbc:CopyIndicator>
+					<cbc:UUID>F47AC10B-58CC-4372-A567-0E02B2C3D479</cbc:UUID>
+					<cbc:IssueDate>2018-01-06</cbc:IssueDate>
+					<cbc:IssueTime>09:00:00</cbc:IssueTime>
+					<cbc:DespatchAdviceTypeCode>SEVK</cbc:DespatchAdviceTypeCode>
+					<cbc:Note>Mallar teslim edildi..</cbc:Note>
+					<cac:OrderReference>
+						<cbc:ID>GIB2016000000033</cbc:ID>
+						<cbc:IssueDate>2016-08-14</cbc:IssueDate>
+					</cac:OrderReference>
+
+					<cac:AdditionalDocumentReference>
+						<cbc:ID>A1000</cbc:ID>
+						<cbc:IssueDate>2018-01-01</cbc:IssueDate>
+						<cbc:DocumentType>CUST_DES_ID</cbc:DocumentType>
+						<cbc:DocumentTypeCode>CUST_DES_ID</cbc:DocumentTypeCode>
+					</cac:AdditionalDocumentReference>
+					<cac:AdditionalDocumentReference>
+						<cbc:ID>GIB2016000000078</cbc:ID>
+						<cbc:IssueDate>2016-08-11</cbc:IssueDate>
+						<cbc:DocumentType>Kontrat</cbc:DocumentType>
+						<cbc:DocumentDescription>Kontrat belgesi</cbc:DocumentDescription>
+					</cac:AdditionalDocumentReference>
+
+					<cac:Signature>
+						<cbc:ID schemeID="VKN_TCKN">0123456789</cbc:ID><!--DOLDURULMALIDIR -->
+						<cac:SignatoryParty>
+							<cbc:WebsiteURI>www.fitsolutions.com.tr</cbc:WebsiteURI>
+							<cac:PartyIdentification>
+								<cbc:ID schemeID="VKN">0123456789</cbc:ID><!--DOLDURULMALIDIR -->
+							</cac:PartyIdentification>
+							<cac:PartyName>
+								<cbc:Name>FIT DANISMANLIK VE TEKNOLOJI BILISIM HIZMETLERI A.S.</cbc:Name>
+							</cac:PartyName>
+							<cac:PostalAddress>
+								<cbc:Room>45</cbc:Room>
+								<cbc:StreetName>Öz Sokak</cbc:StreetName>
+								<cbc:BuildingName>Gold Plaza</cbc:BuildingName>
+								<cbc:BuildingNumber>19</cbc:BuildingNumber>
+								<cbc:CitySubdivisionName>Altayçesme Mahellesi</cbc:CitySubdivisionName>
+								<cbc:CityName>ISTANBUL</cbc:CityName>
+								<cbc:PostalZone>34843</cbc:PostalZone>
+								<cbc:Region>Marmara</cbc:Region>
+								<cac:Country>
+									<cbc:Name>TÜRKIYE</cbc:Name>
+								</cac:Country>
+							</cac:PostalAddress>
+							<cac:Contact>
+								<cbc:Telephone>0(216) 445 93 79</cbc:Telephone>
+								<cbc:Telefax>0(216) 445 92 87</cbc:Telefax>
+								<cbc:ElectronicMail>muhasebe@fitcons.com</cbc:ElectronicMail>
+							</cac:Contact>
+						</cac:SignatoryParty>
+						<cac:DigitalSignatureAttachment>
+							<cac:ExternalReference>
+								<cbc:URI>#Signature</cbc:URI>
+							</cac:ExternalReference>
+						</cac:DigitalSignatureAttachment>
+					</cac:Signature>
+
+					<cac:DespatchSupplierParty>
+						<cac:Party>
+							<cbc:WebsiteURI>http://fitsolutions.com.tr/</cbc:WebsiteURI>
+							<cac:PartyIdentification>
+								<cbc:ID schemeID="VKN">0123456789</cbc:ID><!--DOLDURULMALIDIR -->
+							</cac:PartyIdentification>
+							<cac:PartyName>
+								<cbc:Name>FIT SOLUTIONS</cbc:Name>
+							</cac:PartyName>
+							<cac:PostalAddress>
+								<cbc:ID></cbc:ID>
+								<cbc:StreetName>Altayçesme Mah. Öz Sokak Gold Plaza</cbc:StreetName>
+								<cbc:BuildingNumber>19</cbc:BuildingNumber>
+								<cbc:CitySubdivisionName>Maltepe</cbc:CitySubdivisionName>
+								<cbc:CityName>İstanbul</cbc:CityName>
+								<cbc:PostalZone>34843</cbc:PostalZone>
+								<cac:Country>
+									<cbc:Name>Türkiye</cbc:Name>
+								</cac:Country>
+							</cac:PostalAddress>
+							<cac:PhysicalLocation>
+								<cbc:ID>Depo Şube</cbc:ID>
+								<cac:Address>
+									<cbc:ID>1234567895</cbc:ID>
+									<cbc:StreetName>Ihlamur Mahallesi Selvi Caddesi Sedir Sokak</cbc:StreetName>
+									<cbc:BuildingNumber>79/A</cbc:BuildingNumber>
+									<cbc:CitySubdivisionName>Balgat</cbc:CitySubdivisionName>
+									<cbc:CityName>Ankara</cbc:CityName>
+									<cbc:PostalZone>06800</cbc:PostalZone>
+									<cac:Country>
+										<cbc:Name>Türkiye</cbc:Name>
+									</cac:Country>
+								</cac:Address>
+							</cac:PhysicalLocation>
+							<cac:PartyTaxScheme>
+								<cac:TaxScheme>
+									<cbc:Name>Büyük Mükellefler</cbc:Name>
+								</cac:TaxScheme>
+							</cac:PartyTaxScheme>
+							<cac:Contact>
+								<cbc:Telephone>(212) 925 51515</cbc:Telephone>
+								<cbc:Telefax>(212) 925505015</cbc:Telefax>
+								<cbc:ElectronicMail>aa@aaa.com.tr</cbc:ElectronicMail>
+							</cac:Contact>
+							<cac:Person>
+								<cbc:FirstName>Cemal</cbc:FirstName>
+								<cbc:FamilyName>Temiz</cbc:FamilyName>
+							</cac:Person>
+						</cac:Party>
+					</cac:DespatchSupplierParty>
+					<cac:DeliveryCustomerParty>
+						<cac:Party>
+							<cbc:WebsiteURI>http://fitsolutions.com.tr/</cbc:WebsiteURI>
+							<cac:PartyIdentification>
+								<cbc:ID schemeID="VKN">0123456789</cbc:ID><!--DOLDURULMALIDIR -->
+							</cac:PartyIdentification>
+							<cac:PartyIdentification>
+								<cbc:ID schemeID="MUSTERINO">120010751</cbc:ID>
+							</cac:PartyIdentification>
+							<cac:PartyName>
+								<cbc:Name>FIT SOLUTIONS</cbc:Name>
+							</cac:PartyName>
+							<cac:PostalAddress>
+								<cbc:ID></cbc:ID>
+								<cbc:StreetName>Altayçesme Mah. Öz Sokak Gold Plaza</cbc:StreetName>
+								<cbc:BuildingNumber>19</cbc:BuildingNumber>
+								<cbc:CitySubdivisionName>Maltepe</cbc:CitySubdivisionName>
+								<cbc:CityName>İstanbul</cbc:CityName>
+								<cbc:PostalZone>34843</cbc:PostalZone>
+								<cac:Country>
+									<cbc:Name>Türkiye</cbc:Name>
+								</cac:Country>
+							</cac:PostalAddress>
+							<cac:PartyTaxScheme>
+								<cac:TaxScheme>
+									<cbc:Name>Çankaya</cbc:Name>
+								</cac:TaxScheme>
+							</cac:PartyTaxScheme>
+							<cac:Contact>
+								<cbc:Telephone>(312) 621 1112</cbc:Telephone>
+								<cbc:Telefax>(312) 621 1011</cbc:Telefax>
+								<cbc:ElectronicMail>bb@bbb.com.tr</cbc:ElectronicMail>
+							</cac:Contact>
+						</cac:Party>
+					</cac:DeliveryCustomerParty>
+
+					<cac:Shipment>
+						<cbc:ID />
+						<cac:GoodsItem>
+							<cbc:ValueAmount currencyID="TRY">35200</cbc:ValueAmount>
+						</cac:GoodsItem>
+						<cac:ShipmentStage>
+							<cac:TransportMeans>
+								<cac:RoadTransport>
+									<cbc:LicensePlateID schemeID="PLAKA">06DR4077</cbc:LicensePlateID>
+								</cac:RoadTransport>
+							</cac:TransportMeans>
+							<cac:DriverPerson>
+								<cbc:FirstName>Mehmet</cbc:FirstName>
+								<cbc:FamilyName>Öztürk</cbc:FamilyName>
+								<cbc:Title>Şoför</cbc:Title>
+								<cbc:NationalityID>14922266699</cbc:NationalityID>
+							</cac:DriverPerson>
+							<cac:DriverPerson>
+								<cbc:FirstName>Mustafa</cbc:FirstName>
+								<cbc:FamilyName>Öztürk</cbc:FamilyName>
+								<cbc:Title>Şoför</cbc:Title>
+								<cbc:NationalityID>14922266600</cbc:NationalityID>
+							</cac:DriverPerson>
+						</cac:ShipmentStage>
+						<cac:Delivery>
+							<cac:CarrierParty>
+								<cac:PartyIdentification>
+									<cbc:ID schemeID="VKN">1288331523</cbc:ID>
+								</cac:PartyIdentification>
+								<cac:PartyName>
+									<cbc:Name>CCC Lojistik Anonim Şirketi</cbc:Name>
+								</cac:PartyName>
+								<cac:PostalAddress>
+									<cbc:CitySubdivisionName>Osmancık</cbc:CitySubdivisionName>
+									<cbc:CityName>Çorum</cbc:CityName>
+									<cac:Country>
+										<cbc:Name>Türkiye</cbc:Name>
+									</cac:Country>
+								</cac:PostalAddress>
+							</cac:CarrierParty>
+							<cac:Despatch>
+								<cbc:ActualDespatchDate>2016-08-14</cbc:ActualDespatchDate>
+								<cbc:ActualDespatchTime>09:00:00</cbc:ActualDespatchTime>
+							</cac:Despatch>
+						</cac:Delivery>
+						<cac:TransportHandlingUnit>
+							<cac:TransportEquipment>
+								<cbc:ID schemeID="DORSEPLAKA">06DR4088</cbc:ID>
+							</cac:TransportEquipment>
+							<cac:TransportEquipment>
+								<cbc:ID schemeID="DORSEPLAKA">06DR4099</cbc:ID>
+							</cac:TransportEquipment>
+						</cac:TransportHandlingUnit>
+					</cac:Shipment>
+					<cac:DespatchLine>
+						<cbc:ID>1</cbc:ID>
+						<cbc:DeliveredQuantity unitCode="C62">20</cbc:DeliveredQuantity>
+						<cac:OrderLineReference>
+							<cbc:LineID>1</cbc:LineID>
+						</cac:OrderLineReference>
+						<cac:Item>
+							<cbc:Name>Masa Üstü Bilgisayar</cbc:Name>
+							<cac:SellersItemIdentification>
+								<cbc:ID>PNC1234</cbc:ID>
+							</cac:SellersItemIdentification>
+						</cac:Item>
+						<cac:Shipment>
+							<cbc:ID />
+							<cac:GoodsItem>
+								<cac:InvoiceLine>
+									<cbc:ID />
+									<cbc:InvoicedQuantity>0</cbc:InvoicedQuantity>
+									<cbc:LineExtensionAmount
+										currencyID="TRY">20000</cbc:LineExtensionAmount>
+									<cac:Item>
+										<cbc:Name />
+									</cac:Item>
+									<cac:Price>
+										<cbc:PriceAmount currencyID="TRY">1000</cbc:PriceAmount>
+									</cac:Price>
+								</cac:InvoiceLine>
+							</cac:GoodsItem>
+						</cac:Shipment>
+					</cac:DespatchLine>
+					<cac:DespatchLine>
+						<cbc:ID>2</cbc:ID>
+						<cbc:DeliveredQuantity unitCode="C62">12</cbc:DeliveredQuantity>
+						<cac:OrderLineReference>
+							<cbc:LineID>2</cbc:LineID>
+						</cac:OrderLineReference>
+						<cac:Item>
+							<cbc:Name>Notebook Bilgisayar</cbc:Name>
+							<cac:SellersItemIdentification>
+								<cbc:ID>PNC1235</cbc:ID>
+							</cac:SellersItemIdentification>
+						</cac:Item>
+						<cac:Shipment>
+							<cbc:ID />
+							<cac:GoodsItem>
+								<cac:InvoiceLine>
+									<cbc:ID />
+									<cbc:InvoicedQuantity>0</cbc:InvoicedQuantity>
+									<cbc:LineExtensionAmount
+										currencyID="TRY">12000</cbc:LineExtensionAmount>
+									<cac:Item>
+										<cbc:Name />
+									</cac:Item>
+									<cac:Price>
+										<cbc:PriceAmount currencyID="TRY">1000</cbc:PriceAmount>
+									</cac:Price>
+								</cac:InvoiceLine>
+							</cac:GoodsItem>
+						</cac:Shipment>
+					</cac:DespatchLine>
+					<cac:DespatchLine>
+						<cbc:ID>3</cbc:ID>
+						<cbc:DeliveredQuantity unitCode="C62">12</cbc:DeliveredQuantity>
+						<cac:OrderLineReference>
+							<cbc:LineID>3</cbc:LineID>
+						</cac:OrderLineReference>
+						<cac:Item>
+							<cbc:Name>Notebook Çantası</cbc:Name>
+							<cac:SellersItemIdentification>
+								<cbc:ID>PNC1236</cbc:ID>
+							</cac:SellersItemIdentification>
+						</cac:Item>
+						<cac:Shipment>
+							<cbc:ID />
+							<cac:GoodsItem>
+								<cac:InvoiceLine>
+									<cbc:ID />
+									<cbc:InvoicedQuantity>0</cbc:InvoicedQuantity>
+									<cbc:LineExtensionAmount
+										currencyID="TRY">1200</cbc:LineExtensionAmount>
+									<cac:Item>
+										<cbc:Name />
+									</cac:Item>
+									<cac:Price>
+										<cbc:PriceAmount currencyID="TRY">100</cbc:PriceAmount>
+									</cac:Price>
+								</cac:InvoiceLine>
+							</cac:GoodsItem>
+						</cac:Shipment>
+					</cac:DespatchLine>
+					<cac:DespatchLine>
+						<cbc:ID>4</cbc:ID>
+						<cbc:DeliveredQuantity unitCode="C62">2</cbc:DeliveredQuantity>
+						<cac:OrderLineReference>
+							<cbc:LineID>4</cbc:LineID>
+						</cac:OrderLineReference>
+						<cac:Item>
+							<cbc:Name>Yazıcı</cbc:Name>
+							<cac:SellersItemIdentification>
+								<cbc:ID>PNC1237</cbc:ID>
+							</cac:SellersItemIdentification>
+						</cac:Item>
+						<cac:Shipment>
+							<cbc:ID />
+							<cac:GoodsItem>
+								<cac:InvoiceLine>
+									<cbc:ID />
+									<cbc:InvoicedQuantity>0</cbc:InvoicedQuantity>
+									<cbc:LineExtensionAmount
+										currencyID="TRY">2000</cbc:LineExtensionAmount>
+									<cac:Item>
+										<cbc:Name />
+									</cac:Item>
+									<cac:Price>
+										<cbc:PriceAmount currencyID="TRY">1000</cbc:PriceAmount>
+									</cac:Price>
+								</cac:InvoiceLine>
+							</cac:GoodsItem>
+						</cac:Shipment>
+					</cac:DespatchLine>
+
+				</DespatchAdvice>
+
+			</ElementList>
+		</Elements>
+	</ef:Package>
+</sh:StandardBusinessDocument>
